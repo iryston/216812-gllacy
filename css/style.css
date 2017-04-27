@@ -3,6 +3,7 @@
 
 
 body {
+	max-width: 900px;
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
@@ -45,6 +46,7 @@ input[class$="-btn"] {
 	margin: 0 auto;
 	padding: 0 10px;
 	box-sizing: border-box;
+	/* border: 1px solid violet; */
 }
 
 /*----------------------HEADER-------------------------*/
@@ -143,6 +145,7 @@ input[class$="-btn"] {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 20px 10px;
+	/* border: 1px solid violet; */
 }
 
 .bonus-item {
@@ -174,6 +177,7 @@ input[class$="-btn"] {
 	left: 20px;
 	font-size: 18px;
 	line-height: 1.2;
+	margin-bottom: 10px;
 }
 
 a.bonus-item-btn {
@@ -192,6 +196,7 @@ a.bonus-item-btn {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 10px 0;
+	/* border: 1px solid violet; */
 }
 
 .hits-item  {
@@ -225,32 +230,105 @@ a.bonus-item-btn {
 	font-size: 30px;
 }
 
+/*----------------------ABOUT-US-------------------------*/
 
+.about-us {
+	padding: 20px 10px;
+	/* border: 1px solid violet; */
+}
 
+.about-us-bg {
+	padding: 27px 20px;
+	padding-bottom: 10px;
+	background: url("../img/wafer.png");
+	border-radius: 15px;
+}
 
+.about-info {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	/* border: 1px solid violet; */
+}
 
+.about-info li {
+	max-width: 410px;
+	min-height: 123px;
+	padding-top: 16px;
+	padding-left: 58px;
+	box-sizing: border-box;
+}
 
+.about-info li:nth-child(even) {
+	padding-left: 65px;
+}
 
+.about-us h2 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 24px;
+	line-height: 1.25;
+	color: rgb(50, 50, 50);
+}
 
+.about-info p {
+	margin: 0;
+	font-weight: normal;
+	color: rgb(50, 50, 50);
+}
 
+.about-symb-ice::before {
+	content: url("../img/icon-ice.png");
+	position: absolute;
+	top: 0; 
+	left: 0;
+	width: 49px;
+	height: 49px;
+}
 
+.about-symb-cow::before {
+	content: url("../img/icon-cow.png");
+	position: absolute;
+	top: 0; 
+	left: 420px;
+	width: 49px;
+	height: 49px;
+}
 
+.about-symb-nature::before {
+	content: url("../img/icon-nature.png");
+	position: absolute;
+	top: 128px; 
+	left: 0;
+	width: 49px;
+	height: 49px;
+}
 
-
-
-
+.about-symb-temp::before {
+	content: url("../img/icon-temp.png");
+	position: absolute;
+	top: 128px; 
+	left: 420px;
+	width: 49px;
+	height: 49px;
+}
 
 /*----------------------NEWS-SUBSCRIBE-------------------------*/
 
 .news-subscribe {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 40px 10px;
+	padding: 20px 10px;
+	/* border: 1px solid violet; */
 }
 
 .news {
 	position: relative;
 	margin-right: 20px;
+	/* border: 1px solid violet; */
 }
 
 .news h2 {
