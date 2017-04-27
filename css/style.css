@@ -180,8 +180,49 @@ a.bonus-item-btn {
 	display: block;
 	right: 20px;
 	bottom: 25px;
+	padding-left: 22px;
+	padding-right: 22px;
 	line-height: 35px;
 	border-radius: 30px;
+}
+
+/*----------------------HITS-------------------------*/
+
+.hits {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px 0;
+}
+
+.hits-item  {
+	position: relative;
+	width: 200px;
+	padding: 10px;
+	text-align: center;
+}
+
+.hits-item::before {
+	content: url("../img/hit.png");
+	position: absolute;
+}
+
+.hits-item a {
+	line-height: 22px;
+}
+
+.hits-item img {
+	margin-bottom: 15px;
+}
+
+.hits-price {
+	position: absolute;
+	top: 145px;
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.hits-price span {
+	font-size: 30px;
 }
 
 
