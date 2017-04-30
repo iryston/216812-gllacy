@@ -146,30 +146,51 @@ input[type="submit"] {
 /*----------------------PROMO-------------------------*/
 
 .promo {
-	width: 880px;
+	display: flex;
+	flex-direction: column;
 	height: 541px;
-	padding: 20px 10px;
-	text-align: center;
-	box-sizing: border-box;
-	/* outline: 1px solid violet;  */
+	/* outline: 1px solid violet; */
+}
+
+.promo-center {
+	margin: auto;
+	outline: 1px solid violet;
 }
 
 .promo h1 {
-	margin-top: 286px;
-	margin-bottom: 100px;
+	margin: 0;
 	font-size: 60px;
 	line-height: 60px;
 }
 
 a.promo-btn {
 	max-width: 280px;
-	padding: 12px 40px;
+	padding: 15px 40px;
 	font-size: 32px;
-	line-height: 1.4;
+	line-height: 1.375;
 	border-radius: 35px;
-	text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 	box-sizing: border-box;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*----------------------BONUS-------------------------*/
 
@@ -205,20 +226,20 @@ a.promo-btn {
 }
 
 .bonus-item p {
-	top: 73px;
+	top: 75px;
 	left: 18px;
 	font-size: 18px;
-	font-weight: bold;
-	line-height: 1.3;
+	font-weight: normal;
+	line-height: 1.2;
 	margin-bottom: 10px;
 }
 
 a.bonus-item-btn {
 	display: block;
-	right: 21px;
+	right: 20px;
 	bottom: 28px;
-	padding-left: 22px;
-	padding-right: 22px;
+	padding-left: 23px;
+	padding-right: 23px;
 	line-height: 34px;
 	border-radius: 30px;
 }
@@ -236,9 +257,8 @@ a.bonus-item-btn {
 	width: 200px;
 	padding: 10px;
 	padding-top: 6px;
-	padding-bottom: 9px;
+	padding-bottom: 5px;
 	text-align: center;
-	/* outline: 1px solid violet; */
 }
 
 .hits-item::before {
@@ -249,16 +269,16 @@ a.bonus-item-btn {
 .hits-item a {
 	font-size: 16px;
 	font-weight: 500;
-	line-height: 22px;
+	line-height: 23px;
 }
 
 .hits-item img {
-	margin-bottom: 7px;
+	margin-bottom: 8px;
 }
 
 .hits-price {
 	position: absolute;
-	top: 146px;
+	top: 145px;
 	font-size: 45px;
 	line-height: 45px;
 }
@@ -423,7 +443,7 @@ a.bonus-item-btn {
 	color: rgb(90, 90, 90);
 }
 
-.subscribe input[type="email"] { 
+.subscribe-email { 
 	display: inline-block;
 	width: 229px;
 	margin-right: 8px;
