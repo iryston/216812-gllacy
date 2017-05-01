@@ -90,15 +90,15 @@ body {
 }
 
 .page-content a {
-	color: rgba(255, 255, 255, 0.8);
+	color: rgb(255, 255, 255);
 	text-decoration: none;
 	border-bottom: 1px solid white;
 	border-color: rgba(255, 255, 255, 0.3);
 }
 /*--------------------------------------COMMON CLASS------------------------------------------*/
 
-.page-content [class$="-btn"],
-.page-content [type="submit"] {
+[class$="-btn"],
+[type="submit"] {
 	padding: 5px 20px;
 	text-align: center;
 	font-size: 18px;
@@ -106,7 +106,6 @@ body {
 	line-height: 24px;
 	color: rgb(255, 255, 255);
 	border-radius: 25px;
-	border: none;
 	background-image: linear-gradient(90deg, rgb(231,74,53), rgb(242,104,67));
     box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
 }
@@ -141,6 +140,7 @@ body {
 	font-size: 14px;
 	font-weight: normal;
 	line-height: 32px; 
+	color: rgb(255, 255, 255);
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 20px;
 }
@@ -205,6 +205,7 @@ body {
 .header-time-phone p {
 	font-size: 14px;
 	margin-top: 0;
+	color: rgb(255, 255, 255);
 }
 
 .header-time-phone a {
@@ -229,14 +230,16 @@ body {
 	margin-bottom: 100px;
 	font-size: 60px;
 	line-height: 60px;
+	color: rgb(255, 255, 255);
 }
 
-.promo-btn {
+a.promo-btn {
 	max-width: 280px;
 	padding: 12px 40px;
 	font-size: 32px;
 	line-height: 1.4;
 	border-radius: 35px;
+	border: none;
 	text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 	box-sizing: border-box;
 }
@@ -265,6 +268,7 @@ body {
 	position: absolute;
 	margin-top: 0;
 	font-weight: bold;
+	color: rgb(255, 255, 255);
 }
 
 .bonus-item h2 {
@@ -291,6 +295,7 @@ a.bonus-item-btn {
 	padding-right: 22px;
 	line-height: 34px;
 	border-radius: 30px;
+	border: none;
 }
 
 /*----------------------HITS-------------------------*/
@@ -331,6 +336,7 @@ a.bonus-item-btn {
 	top: 146px;
 	font-size: 45px;
 	line-height: 45px;
+	color: rgb(255, 255, 255);
 }
 
 .hits-price span {
@@ -511,6 +517,8 @@ a.bonus-item-btn {
 .subscribe input[type="submit"] {
 	padding: 9px 18px 11px 18px;
 	font-size: 17px;
+	border: none;
+	cursor: pointer;
 }
 
 /*----------------------MAP-FEEDBACK-------------------------*/
@@ -582,6 +590,7 @@ a.feedback-form-btn {
 	color: rgb(255, 255, 255); 
 	line-height: 34px;
 	border-radius: 30px;
+	border: none;
 }
 
 /*----------------------FOOTER-------------------------*/
