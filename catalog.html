@@ -61,10 +61,10 @@
 					<div class="center">
 						<form class="user-block" action="#" method="get">
 							<div class="fieldset">
-								<div class="sort">
+								<div class="common sort">
 									<span>Сортировка:</span>
 									<div class="sort-select">
-										<select name="sort-popular" id="sort-popular">
+										<select name="sort">
 											<option value="popular-first">по популярности</option>
 											<option value="chip-first">сначала недорогие</option>
 											<option value="expensive-first">сначала дорогие</option>
@@ -73,51 +73,63 @@
 									</div>
 								</div>
 							
-								<div class="price-range">
+								<div class="common price">
 									<span>Цена: 100 руб. - 500 руб.</span>
 									<div class="range">
-										<input type="range" name="range" id="price-range-field">
+										<input type="range" name="range">
 									</div>
 								</div>
 							
-								<div class="fat-choice-radio">
+								<div class="common fat-radio">
 									<span>Жирность:</span>
-									<input type="radio" name="toggle" id="radio1">
-									<input type="radio" name="toggle" id="radio2" checked>
-									<input type="radio" name="toggle" id="radio3">
-									<input type="radio" name="toggle" id="radio4">
-									<div class="radio-control">
-										<div class="radio-label">
-											<label for="radio1"></label>0%
-										</div>
-										<div class="radio-label">
-											<label for="radio2"></label>до 10%
-										</div>
-										<div class="radio-label">
-											<label for="radio3"></label>до 30%
-										</div>
-										<div class="radio-label">
-											<label for="radio4"></label>выше 30%
-										</div>
+									<input type="radio" name="radio" id="radio1">
+									<input type="radio" name="radio" id="radio2" checked>
+									<input type="radio" name="radio" id="radio3">
+									<input type="radio" name="radio" id="radio4">
+									<div class="radio-controls">
+										<label for="radio1">
+											<div class="radio-toggle"></div>0%
+										</label>
+										<label for="radio2">
+											<div class="radio-toggle"></div>до 10%
+										</label>
+										<label for="radio3">
+											<div class="radio-toggle"></div>до 30%
+										</label>
+										<label for="radio4">
+											<div class="radio-toggle"></div>выше 30%
+										</label>
 									</div>
 								</div>
 							
-								<div class="filler-choice-checkbox">
+								<div class="common filler-checkbox">
 									<span>Наполнители:</span>
 									<input type="checkbox" name="checkbox1" id="checkbox-field-1" checked>
 									<input type="checkbox" name="checkbox2" id="checkbox-field-2" checked>
 									<input type="checkbox" name="checkbox3" id="checkbox-field-3">
 									<input type="checkbox" name="checkbox4" id="checkbox-field-4">
 									<input type="checkbox" name="checkbox5" id="checkbox-field-5">
-									<div class="checkbox-control">
-										<label for="checkbox-field-1">шоколадные</label>
-										<label for="checkbox-field-2">сахарные присыпки</label>
-										<label for="checkbox-field-3">фрукты</label>
-										<label for="checkbox-field-4">сиропы</label>
-										<label for="checkbox-field-5">джемы</label>
+									<div class="checkbox-controls">
+										<label for="checkbox-field-1">
+											<div class="checkbox-toggle"></div>шоколадные
+										</label>
+										<label for="checkbox-field-2">
+											<div class="checkbox-toggle"></div>сахарные присыпки
+										</label>
+										<label for="checkbox-field-3">
+											<div class="checkbox-toggle"></div>фрукты
+										</label>
+										<label for="checkbox-field-4">
+											<div class="checkbox-toggle"></div>сиропы
+										</label>
+										<label for="checkbox-field-5">
+											<div class="checkbox-toggle"></div>джемы
+										</label>
 									</div>
 								</div>
-								<input type="submit" name="apply" value="Применить">
+								<div class="user-block-submit">
+									<input class="common-btn" type="submit" name="apply" value="Применить">
+								</div>
 							</div>
 						</form>
 					</div>
@@ -125,7 +137,7 @@
 			
 				<div class="wrapper">
 					<div class="center">
-						<div class="catalog catalog-1">
+						<div class="catalog">
 							<div class="catalog-item hits-item">
 								<img src="img/catalog/ice/orange-ice.png" width="267" height="267" alt="товар из каталога">
 								<div class="catalog-item-price">310<span>/кг</span></div>

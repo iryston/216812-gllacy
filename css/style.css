@@ -14,13 +14,13 @@ body {
 	width: 1200px;
 	min-height: 1650px;
 	margin: 0 auto;
-	outline: 1px solid red; 
+	/* outline: 1px solid red;  */
 }
 
 .page a {
 	color: rgb(255, 255, 255);
 	text-decoration: none;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid rgb(255, 255, 255);
 	border-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -30,10 +30,9 @@ body {
 	/* outline: 1px solid red;  */
 }
 
-/*--------------------------------------COMMON CLASS------------------------------------------*/
+/*----------------------COMMON-*-------------------------*/
 
-[class$="-btn"],
-[type="submit"] {
+.common-btn {
 	padding: 5px 20px;
 	text-align: center;
 	font-size: 18px;
@@ -44,8 +43,6 @@ body {
 	background-image: linear-gradient(90deg, rgb(231,74,53), rgb(242,104,67));
     box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
 }
-
-
 
 /*----------------------HEADER-------------------------*/
 
@@ -251,7 +248,7 @@ body {
 	color: rgb(255, 255, 255);
 }
 
-a.promo-btn {
+.promo-btn {
 	max-width: 280px;
 	padding: 12px 40px;
 	font-size: 32px;
@@ -319,15 +316,21 @@ a.bonus-item-btn {
 }
 
 /*----------------------USER-BLOCK-------------------*/
+
 .user-block {
-	height: 181px;
-	/* outline: 1px solid yellow; */
+	min-height: 164px;
 }
 
 .user-block input[type="radio"],
 .user-block input[type="checkbox"],
 .user-block input[type="range"] {
 	display: none;	
+}
+
+.user-block .common {
+	width: 210px;
+	padding: 8px;
+	box-sizing: border-box;
 }
 
 .user-block  .fieldset {
@@ -337,7 +340,6 @@ a.bonus-item-btn {
 	font-weight: 500;
 	color: rgb(255, 255, 255);
 	border: none;
-	outline: 1px solid red;
 }
 
 .user-block span {
@@ -346,18 +348,10 @@ a.bonus-item-btn {
 	margin-bottom: 6px;
 }
 
-.user-block .sort {
-	width: 210px;
-	padding: 8px;
-	box-sizing: border-box;
-	/* outline: 1px solid yellow; */
-}
-
 .user-block .sort-select {
 	line-height: 36px;
 	border-radius: 20px;
 	background-color: rgba(248, 247, 244, 0.2);
-	/* outline: 2px solid green; */
 }
 
 .sort-select select {
@@ -370,10 +364,8 @@ a.bonus-item-btn {
 	background-color: rgba(248, 247, 244, 0);
 }
 
-.user-block .price-range {
+.user-block .price {
 	width: 234px;
-	padding: 8px;
-	box-sizing: border-box;
 }
 
 .user-block .range {
@@ -386,13 +378,16 @@ a.bonus-item-btn {
 	border-radius: 20px;
 }
 
-.user-block .fat-choice-radio {
-	min-width: 434px;
-	padding: 8px;
-	box-sizing: border-box;
+.user-block .fat-radio {
+	min-width: 435px;
 }
 
-.radio-control {
+.filler-checkbox {
+	min-width: 720px;
+}
+
+.radio-controls,
+.checkbox-controls {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -402,17 +397,16 @@ a.bonus-item-btn {
 	line-height: 36px;
 	border-radius: 20px;
 	background-color: rgba(248, 247, 244, 0.2);
-	/* outline: 1px solid red; */
 }
 
-.radio-label {
+.radio-controls label,
+.checkbox-controls label {
 	display: flex;
 	align-items: center;
 	padding: 0 4px;
-	/* outline: 1px solid red; */
 }
 
-.radio-label label {
+.radio-toggle {
 	width: 11px;
 	height: 11px;
 	margin-right: 13px;
@@ -422,20 +416,44 @@ a.bonus-item-btn {
 	box-shadow: 0 0 0 1px rgb(255, 255, 255);
 }
 
-#radio1:checked ~ .radio-control .radio-label label[for="radio1"] {
+.checkbox-toggle {
+	width: 18px;
+	height: 18px;
+	margin-right: 13px;
+	border-radius: 4px;
+	box-shadow: 0 0 0 1px rgb(255, 255, 255);
+}
+
+#radio1:checked ~ .radio-controls label[for="radio1"] .radio-toggle,
+#radio2:checked ~ .radio-controls label[for="radio2"] .radio-toggle,
+#radio3:checked ~ .radio-controls label[for="radio3"] .radio-toggle,
+#radio4:checked ~ .radio-controls label[for="radio4"] .radio-toggle {
 	background-color: rgb(255, 255, 255);
 }
 
-#radio2:checked ~ .radio-control label[for="radio2"] {
-	background-color: rgb(255, 255, 255);
+#checkbox-field-1:checked ~ .checkbox-controls label[for="checkbox-field-1"] .checkbox-toggle,
+#checkbox-field-2:checked ~ .checkbox-controls label[for="checkbox-field-2"] .checkbox-toggle, 
+#checkbox-field-3:checked ~ .checkbox-controls label[for="checkbox-field-3"] .checkbox-toggle,
+#checkbox-field-4:checked ~ .checkbox-controls label[for="checkbox-field-4"] .checkbox-toggle,
+#checkbox-field-5:checked ~ .checkbox-controls label[for="checkbox-field-5"] .checkbox-toggle {
+	background: url("../img/checked.png") no-repeat -1px -1px;
 }
 
-#radio3:checked ~ .radio-control label[for="radio3"] {
-	background-color: rgb(255, 255, 255);
+.user-block-submit {
+	display: flex;
+	padding: 8px;
 }
 
-#radio4:checked ~ .radio-control label[for="radio4"] {
-	background-color: rgb(255, 255, 255);
+.user-block input[type="submit"]{
+	margin-top: auto;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 4px 28px;
+	background-image: none;
+	box-shadow: none;
+	background-color: rgba(255, 255, 255, 0.2);
+	border: 2px solid rgb(255, 255, 255);
+	cursor: pointer;
 }
 
 /*----------------------CATALOG-HITS-------------------*/
@@ -444,12 +462,6 @@ a.bonus-item-btn {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	
-	/* outline: 2px solid yellow; */
-}
-
-.catalog-1 {
-	height: 1000px;
 }
 
 .catalog-item  {
@@ -460,7 +472,7 @@ a.bonus-item-btn {
 	padding-left: 10px;
 	padding-right: 10px;
 	text-align: center;
-	outline: 1px solid violet;
+	/* outline: 1px solid violet; */
 }
 
 .catalog-item:nth-of-type(4n) {
@@ -507,7 +519,7 @@ a.bonus-item-btn {
 	display: flex;
 	justify-content: space-between;
 	width: 211px;
-	margin-top: 114px;
+	margin-top: 28px;
 	margin-left: auto;
 	padding: 30px 10px;
 	box-sizing: border-box;
@@ -529,6 +541,7 @@ a.bonus-item-btn {
 .paginator .current {
 	color: rgb(0, 0, 0);
 	background-color: rgb(255, 255, 255);
+	cursor: default;	
 }
 
 .paginator .prev,
