@@ -1,7 +1,17 @@
-/*border: 1px solid violet;*/
+.sprite {
+    background-image: url("../img/spritesheet.png");
+    background-repeat: no-repeat;
+    display: block;
+}
 
+.sprite-cart-full {
+    width: 21px;
+    height: 20px;
+    background-position: -10px -50px;
+}
 
 body {
+	min-width: 1200px;
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
@@ -49,6 +59,7 @@ body {
 .header-total {
 	display: flex;
 	position: relative;
+	/* min-height: 75px; */
 }
 
 .header-logo {
@@ -120,10 +131,14 @@ body {
 }
 
 .header-btn.search::after {
-	content: url("../img/header/Loupe.png");
+	content: ""; 
 	position: absolute;
 	top: 4px;
 	left: 8px;
+	width: 20px;
+	height: 20px;
+	background-image: url("../img/spritesheet.png");
+    background-position: -10px -660px;
 }
 
 .header-btn.enter {
@@ -132,10 +147,14 @@ body {
 }
 
 .header-btn.enter::after {
-	content: url("../img/header/enter.png");
+	content: "";
 	position: absolute;
-	top: 5px;
+	top: 6px;
 	left: 16px;
+	width: 21px;
+    height: 19px;
+	background-image: url("../img/spritesheet.png");
+    background-position: -10px -130px;
 }
 
 .header-btn.cart {
@@ -144,15 +163,19 @@ body {
 }
 
 .header-btn.cart::after {
-	content: url("../img/header/cart.png");
+	content: "";
 	position: absolute;
 	top: 6px;
 	left: 16px;
+	width: 21px;
+    height: 20px;
+	background-image: url("../img/spritesheet.png");
+    background-position: -10px -10px;
 }
 
 .header-time-phone {
 	position: absolute;
-	top: 62px;
+	top: 73%;
 	right: 0;
 	padding: 10px;
 	text-align: right;
@@ -331,6 +354,7 @@ a.bonus-item-btn {
 	width: 210px;
 	padding: 8px;
 	box-sizing: border-box;
+	/* outline: 2px solid green; */
 }
 
 .user-block  .fieldset {
@@ -348,20 +372,15 @@ a.bonus-item-btn {
 	margin-bottom: 6px;
 }
 
-.user-block .sort-select {
-	line-height: 36px;
-	border-radius: 20px;
-	background-color: rgba(248, 247, 244, 0.2);
-}
-
-.sort-select select {
-	width: 100%;
-	padding-left: 12px;
-	padding-right: 12px;
+.sort select {
+	width: 194px;
+	padding: 8px 12px;
 	font-size: 16px;
+	line-height: 36px;
 	color: rgb(255, 255, 255);
+	background-color: rgba(248, 247, 244, 0.2);
 	border: none;
-	background-color: rgba(248, 247, 244, 0);
+	border-radius: 30px;
 }
 
 .user-block .price {
@@ -406,7 +425,8 @@ a.bonus-item-btn {
 	padding: 0 4px;
 }
 
-.radio-toggle {
+.radio-controls label::before {
+	content: "";
 	width: 11px;
 	height: 11px;
 	margin-right: 13px;
@@ -416,7 +436,8 @@ a.bonus-item-btn {
 	box-shadow: 0 0 0 1px rgb(255, 255, 255);
 }
 
-.checkbox-toggle {
+.checkbox-controls label::before {
+	content: "";
 	width: 18px;
 	height: 18px;
 	margin-right: 13px;
@@ -424,18 +445,18 @@ a.bonus-item-btn {
 	box-shadow: 0 0 0 1px rgb(255, 255, 255);
 }
 
-#radio1:checked ~ .radio-controls label[for="radio1"] .radio-toggle,
-#radio2:checked ~ .radio-controls label[for="radio2"] .radio-toggle,
-#radio3:checked ~ .radio-controls label[for="radio3"] .radio-toggle,
-#radio4:checked ~ .radio-controls label[for="radio4"] .radio-toggle {
+#radio1:checked ~ .radio-controls label[for="radio1"]::before,
+#radio2:checked ~ .radio-controls label[for="radio2"]::before,
+#radio3:checked ~ .radio-controls label[for="radio3"]::before,
+#radio4:checked ~ .radio-controls label[for="radio4"]::before {
 	background-color: rgb(255, 255, 255);
 }
 
-#checkbox-field-1:checked ~ .checkbox-controls label[for="checkbox-field-1"] .checkbox-toggle,
-#checkbox-field-2:checked ~ .checkbox-controls label[for="checkbox-field-2"] .checkbox-toggle, 
-#checkbox-field-3:checked ~ .checkbox-controls label[for="checkbox-field-3"] .checkbox-toggle,
-#checkbox-field-4:checked ~ .checkbox-controls label[for="checkbox-field-4"] .checkbox-toggle,
-#checkbox-field-5:checked ~ .checkbox-controls label[for="checkbox-field-5"] .checkbox-toggle {
+#checkbox-toggle-1:checked ~ .checkbox-controls label[for="checkbox-toggle-1"]::before,
+#checkbox-toggle-2:checked ~ .checkbox-controls label[for="checkbox-toggle-2"]::before, 
+#checkbox-toggle-3:checked ~ .checkbox-controls label[for="checkbox-toggle-3"]::before,
+#checkbox-toggle-4:checked ~ .checkbox-controls label[for="checkbox-toggle-4"]::before,
+#checkbox-toggle-5:checked ~ .checkbox-controls label[for="checkbox-toggle-5"]::before {
 	background: url("../img/checked.png") no-repeat -1px -1px;
 }
 
@@ -480,8 +501,12 @@ a.bonus-item-btn {
 }
 
 .hits-item::before {
-	content: url("../img/hit.png");
+	content: "";
 	position: absolute;
+	width: 61px;
+    height: 61px;
+    background-position: -10px -254px;
+	background-image: url("../img/spritesheet.png");
 }
 
 .catalog-item a {
@@ -509,10 +534,14 @@ a.bonus-item-btn {
 }
 
 .catalog-item-price span::before {
-	content: url("../img/catalog/rouble.png");
+	content: "";
 	position: absolute;
 	top: -3px;
 	left: 3px;
+	width: 31px;
+    height: 36px;
+    background-image: url("../img/spritesheet.png");
+	background-position: -10px -768px;
 }
 
 .paginator {
@@ -547,16 +576,18 @@ a.bonus-item-btn {
 .paginator .prev,
 .paginator .next {
 	width: 10px;
+	height: 27px;
+	background-image: url("../img/spritesheet.png");
 }
 
 .paginator .prev {
 	margin-right: 14px;
-	background: url("../img/prev-page.png") no-repeat 2px 6px;
+	background-position: -10px -728px;
 }
 
 .paginator .next {
 	margin-left: 14px;
-	background: url("../img/next-page.png") no-repeat 2px 6px;
+	background-position: -10px -694px;
 }
 
 
@@ -616,23 +647,31 @@ a.bonus-item-btn {
 	position: absolute;
 	top: 0;
 	left: 0;
+	width: 49px;
+    height: 49px;
+	background-image: url("../img/spritesheet.png");
 	/* outline: 1px solid violet;  */
 }
 
 .about-us-ice::before {
-	content: url("../img/about-us/signs/icon-ice.png");
+	content: "";
+	background-position: -10px -404px;
 }
 
 .about-us-cow::before {
-	content: url("../img/about-us/signs/icon-cow.png");
+	content: "";
+	background-position: -10px -335px;
+	
 }
 
 .about-us-nature::before {
-	content: url("../img/about-us/signs/icon-nature.png");
+	content: "";
+	background-position: -10px -473px;
 }
 
 .about-us-temp::before {
-	content: url("../img/about-us/signs/icon-temp.png");
+	content: "";
+	background-position: -10px -542px;
 }
 
 /*----------------------NEWS-SUBSCRIBE-------------------------*/
@@ -839,22 +878,29 @@ a.feedback-form-btn {
 	position: absolute;
 	top: 0;
 	left: 0;
+	width: 32px;
+	height: 32px;
+	background-image: url("../img/spritesheet.png");
 }
 
 .footer-btn.tw::after {
-	content: url("../img/footer/social/tw.png");
+	content: "";
+	background-position: -10px -824px;
 }
 
 .footer-btn.insta::after {
-	content: url("../img/footer/social/insta.png");
+	content: "";
+	background-position: -10px -611px;
 }
 
 .footer-btn.fb::after {
-	content: url("../img/footer/social/fb.png");
+	content: "";
+	background-position: -10px -169px;
 }
 
 .footer-btn.vk::after {
-	content: url("../img/footer/social/vk.png");
+	content: "";
+	background-position: -10px -876px;
 }
 
 .footer-partners {
@@ -882,10 +928,14 @@ a.feedback-form-btn {
 }
 
 .footer-partners li:first-of-type::before {
-	content: url("../img/footer/footer-heart.png");
+	content: "";
 	position: absolute;
 	top: 3px;
 	left: 1px;
+	width: 15px;
+    height: 13px;
+	background-image: url("../img/spritesheet.png");
+    background-position: -10px -221px;
 }
 
 .footer-partners li:nth-child(even) {

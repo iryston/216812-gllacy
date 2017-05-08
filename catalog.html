@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Gllacy: Каталог</title>
+		<!-- <link href="css/normalize.css" rel="stylesheet"> -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
@@ -63,14 +64,12 @@
 							<div class="fieldset">
 								<div class="common sort">
 									<span>Сортировка:</span>
-									<div class="sort-select">
-										<select name="sort">
+									<select class="sort-select" name="sort">
 											<option value="popular-first">по популярности</option>
 											<option value="chip-first">сначала недорогие</option>
 											<option value="expensive-first">сначала дорогие</option>
 											<option value="fat-first">по жирности</option>
-										</select>
-									</div>
+									</select>
 								</div>
 							
 								<div class="common price">
@@ -87,44 +86,26 @@
 									<input type="radio" name="radio" id="radio3">
 									<input type="radio" name="radio" id="radio4">
 									<div class="radio-controls">
-										<label for="radio1">
-											<div class="radio-toggle"></div>0%
-										</label>
-										<label for="radio2">
-											<div class="radio-toggle"></div>до 10%
-										</label>
-										<label for="radio3">
-											<div class="radio-toggle"></div>до 30%
-										</label>
-										<label for="radio4">
-											<div class="radio-toggle"></div>выше 30%
-										</label>
+										<label for="radio1">0%</label>
+										<label for="radio2">до 10%</label>
+										<label for="radio3">до 30%</label>
+										<label for="radio4">выше 30%</label>
 									</div>
 								</div>
 							
 								<div class="common filler-checkbox">
 									<span>Наполнители:</span>
-									<input type="checkbox" name="checkbox1" id="checkbox-field-1" checked>
-									<input type="checkbox" name="checkbox2" id="checkbox-field-2" checked>
-									<input type="checkbox" name="checkbox3" id="checkbox-field-3">
-									<input type="checkbox" name="checkbox4" id="checkbox-field-4">
-									<input type="checkbox" name="checkbox5" id="checkbox-field-5">
+									<input type="checkbox" name="checkbox1" id="checkbox-toggle-1" checked>
+									<input type="checkbox" name="checkbox2" id="checkbox-toggle-2" checked>
+									<input type="checkbox" name="checkbox3" id="checkbox-toggle-3">
+									<input type="checkbox" name="checkbox4" id="checkbox-toggle-4">
+									<input type="checkbox" name="checkbox5" id="checkbox-toggle-5">
 									<div class="checkbox-controls">
-										<label for="checkbox-field-1">
-											<div class="checkbox-toggle"></div>шоколадные
-										</label>
-										<label for="checkbox-field-2">
-											<div class="checkbox-toggle"></div>сахарные присыпки
-										</label>
-										<label for="checkbox-field-3">
-											<div class="checkbox-toggle"></div>фрукты
-										</label>
-										<label for="checkbox-field-4">
-											<div class="checkbox-toggle"></div>сиропы
-										</label>
-										<label for="checkbox-field-5">
-											<div class="checkbox-toggle"></div>джемы
-										</label>
+										<label for="checkbox-toggle-1">шоколадные</label>
+										<label for="checkbox-toggle-2">сахарные присыпки</label>
+										<label for="checkbox-toggle-3">фрукты</label>
+										<label for="checkbox-toggle-4">сиропы</label>
+										<label for="checkbox-toggle-5">джемы</label>
 									</div>
 								</div>
 								<div class="user-block-submit">
@@ -138,74 +119,74 @@
 				<div class="wrapper">
 					<div class="center">
 						<div class="catalog">
-							<div class="catalog-item hits-item">
+							<div class="catalog-item">
 								<img src="img/catalog/ice/orange-ice.png" width="267" height="267" alt="товар из каталога">
 								<div class="catalog-item-price">310<span>/кг</span></div>
 								<a href="#">Сливочное с апельсиновым<br> 
 											джемом и цитрусовой стружкой</a>
 							</div>
 				
-							<div class="catalog-item hits-item">
+							<div class="catalog-item">
 								<img src="img/catalog/ice/choc-ice.png" width="267" height="267" alt="товар из каталога">
 								<div class="catalog-item-price">380<span>/кг</span></div>
 								<a href="#">Сливочно-кофейное с кусочками шоколада</a>
 							</div>
 				
-							<div class="catalog-item hits-item">
+							<div class="catalog-item">
 								<img src="img/catalog/ice/strawb-ice.png" width="267" height="267" alt="товар из каталога">
 								<div class="catalog-item-price">355<span>/кг</span></div>
 								<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 							</div>
 				
-							<div class="catalog-item hits-item">
+							<div class="catalog-item">
 								<img src="img/catalog/ice/caramel-ice.png" width="267" height="267" alt="товар из каталога">
 								<div class="catalog-item-price">415<span>/кг</span></div>
 								<a href="#">Сливочное крем-брюле c<br> карамельной подливкой</a>
 							</div>
 							
-							<div class="catalog-item hits-item">
+							<div class="catalog-item">
 								<img src="img/catalog/ice/lingonberry-ice.png" width="267" height="267" alt="товар из каталога">
 								<div class="catalog-item-price">325<span>/кг</span></div>
 								<a href="#">Сливочное с брусничным<br> джемом</a>
 							</div>
 				
-							<div class="catalog-item hits-item">
+							<div class="catalog-item">
 								<img src="img/catalog/ice/blueberry-ice.png" width="267" height="267" alt="товар из каталога">
 								<div class="catalog-item-price">410<span>/кг</span></div>
 								<a href="#">Сливочно-черничное с цельными ягодами черники</a>
 							</div>
 				
-							<div class="catalog-item hits-item">
+							<div class="catalog-item">
 								<img src="img/catalog/ice/lemon-ice.png" width="267" height="267" alt="товар из каталога">
 								<div class="catalog-item-price">375<span>/кг</span></div>
 								<a href="#">Сливочно-лимонное с карамельной присыпкой</a>
 							</div>
 				
-							<div class="catalog-item hits-item">
+							<div class="catalog-item">
 								<img src="img/catalog/ice/choc-flakes-ice.png" width="267" height="267" alt="товар из каталога">
 								<div class="catalog-item-price">320<span>/кг</span></div>
 								<a href="#">Сливочное с шоколадной<br> стружкой</a>
 							</div>
 							
-							<div class="catalog-item hits-item">
+							<div class="catalog-item">
 								<img src="img/catalog/ice/vanilla-ice.png" width="267" height="267" alt="товар из каталога">
 								<div class="catalog-item-price">440<span>/кг</span></div>
 								<a href="#">Сливочное-ванильное с<br> кусочками шоколада</a>
 							</div>
 				
-							<div class="catalog-item hits-item">
+							<div class="catalog-item">
 								<img src="img/catalog/ice/menthol-ice.png" width="267" height="267" alt="товар из каталога">
 								<div class="catalog-item-price">435<span>/кг</span></div>
 								<a href="#">Сливочное с ментоловым<br> сиропом</a>
 							</div>
 				
-							<div class="catalog-item hits-item">
+							<div class="catalog-item">
 								<img src="img/catalog/ice/black-choc-ice.png" width="267" height="267" alt="товар из каталога">
 								<div class="catalog-item-price">355<span>/кг</span></div>
 								<a href="#">Сливочное с кусочками чёрного шоколада</a>
 							</div>
 				
-							<div class="catalog-item hits-item">
+							<div class="catalog-item">
 								<img src="img/catalog/ice/mint-ice.png" width="267" height="267" alt="товар из каталога">
 								<div class="catalog-item-price">420<span>/кг</span></div>
 								<a href="#">Сливочное с мятным сиропом</a>
