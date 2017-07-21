@@ -1,0 +1,352 @@
+/*---------------------------СATALOG-------------------------*/
+
+.catalog {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+.catalog > h2 {
+	margin: 0;
+	margin-bottom: 21px;
+	padding: 0 13px;
+	font-size: 35px;
+	line-height: 1.17;
+}
+
+.user-block {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-line-pack: justify;
+	    align-content: space-between;
+	min-height: 146px;
+	margin-bottom: 24px;
+	padding: 0 13px;
+	font-weight: 600;
+}
+
+.user-block-item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	padding: 7px 0;
+	margin-right: 15px;
+}
+
+.user-block-span {
+	position: relative;
+	margin-left: 16px;
+	margin-bottom: 8px;
+}
+
+.user-block-field {
+	padding: 9px 16px;
+	font-size: 16px;
+	color: inherit;
+	background-color: rgba(248, 247, 244, 0.2);
+	border: none;
+	border-radius: 25px;
+}
+
+.user-block .sort {
+	width: 193px;
+}
+
+.sort-select {
+	-webkit-appearance: none;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: inherit;
+	background-image: url("../img/arrow.png");
+	background-repeat: no-repeat;
+	background-position: 170px center;
+	-moz-appearance: none;
+	text-indent: 0.01px; 
+	-o-text-overflow: ''; 
+	   text-overflow: '';
+}
+
+.sort-select option {
+	font-size: 14px; 
+	color: rgb(50, 50, 50);
+}
+
+.sort-select:hover,
+.sort-select:focus {
+	color: rgb(50, 50, 50);
+	background-color: rgb(255, 255, 255);
+	background-image: url("../img/arrow-black.png");
+	outline: none;
+}
+
+.price {
+	width: 218px;
+}
+
+.price #win1,
+.price #win2 {
+	position: absolute;
+	top: 0px;
+	left: 40px;
+}
+
+.price #win2 {
+	left: 110px;
+}
+
+.price .span-dash {
+	margin-left: 55px;
+}
+
+.price .user-block-field {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+.radio,
+.checkbox {
+	min-width: 415px;
+	max-width: 700px;
+}
+
+.radio input[type="radio"],
+.checkbox input[type="checkbox"] {
+	display: none;
+}
+
+.radio .radio-controls,
+.checkbox .checkbox-controls {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	padding: 4px 12px;
+}
+
+.radio-controls label,
+.checkbox-controls label  {
+	position: relative;
+	margin: 5px;
+	margin-top: 4px;
+	padding-left: 30px;
+}
+
+.radio-controls label:last-of-type,
+.checkbox-controls label:last-of-type {
+	margin-right: 0;
+}
+
+.radio-controls label::before,
+.checkbox-controls label::before{
+	content: "";
+	position: absolute;
+	top: 1px;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	background-clip: content-box;
+	border: 4px solid transparent;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 0 0 1px rgb(255, 255, 255);
+	        box-shadow: 0 0 0 1px rgb(255, 255, 255);
+}
+
+.radio-controls label:hover::before,
+.checkbox-controls label:hover::before {
+	-webkit-box-shadow: 0 0 0 2px rgb(255, 255, 255);
+	        box-shadow: 0 0 0 2px rgb(255, 255, 255);
+}
+
+#radio1:checked ~ .radio-controls label[for="radio1"]::before,
+#radio2:checked ~ .radio-controls label[for="radio2"]::before,
+#radio3:checked ~ .radio-controls label[for="radio3"]::before,
+#radio4:checked ~ .radio-controls label[for="radio4"]::before {
+	background-color: rgb(255, 255, 255);
+	-webkit-box-shadow: 0 0 0 1px rgb(255, 255, 255);
+	        box-shadow: 0 0 0 1px rgb(255, 255, 255);
+}
+
+.checkbox {
+	min-width: 702px;
+	max-width: 1000px;
+}
+
+.checkbox .checkbox-controls {
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	padding-left: 12px;
+	padding-right: 17px;
+}
+
+.checkbox-controls label::before {
+	border-radius: 4px;
+}
+
+#checkbox-toggle-1:checked ~ .checkbox-controls label[for="checkbox-toggle-1"]::before,
+#checkbox-toggle-2:checked ~ .checkbox-controls label[for="checkbox-toggle-2"]::before,
+#checkbox-toggle-3:checked ~ .checkbox-controls label[for="checkbox-toggle-3"]::before,
+#checkbox-toggle-4:checked ~ .checkbox-controls label[for="checkbox-toggle-4"]::before,
+#checkbox-toggle-5:checked ~ .checkbox-controls label[for="checkbox-toggle-5"]::before {
+	background: url("../img/spritesheet.png") no-repeat -10px -70px;
+	-webkit-box-shadow: 0 0 0 1px rgb(255, 255, 255);
+	        box-shadow: 0 0 0 1px rgb(255, 255, 255);
+}
+
+.user-block-item .user-submit-btn {
+	width: 143px;
+	margin-top: auto;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 16px;
+	font-weight: inherit;
+	background-color: rgba(248, 247, 244, 0.2);
+	background-image: none;
+	border: 2px solid rgb(255, 255, 255);
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+
+.user-submit-btn:hover {
+	color: rgb(50, 50, 50);
+	background-color: rgb(255, 255, 255);
+}
+
+.user-submit-btn:active {
+	padding-top: 9px;
+	padding-bottom: 9px;
+	background-color: rgb(237, 237, 237);
+	border: none;
+	-webkit-box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
+	        box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
+}
+
+.catalog-ice {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	padding: 0 13px;
+}
+
+.catalog-item {
+	position: relative;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	width: 267px;
+	margin-bottom: 19px;
+	margin-right: 26px;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.catalog-item:nth-of-type(4n) {
+	margin-right: 0;
+}
+
+.catalog-ice .hit::after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 61px;
+	height: 61px;
+	background: url("../img/spritesheet.png") -5px -277px;
+}
+
+.catalog-item-price {
+	position: absolute;
+	bottom: 80px;
+	font-size: 45px;
+	line-height: 1;
+	text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.catalog-item-price span {
+	position: relative;
+	font-size: 30px;
+	padding-left: 35px;
+}
+
+.catalog-item-price span::before {
+	content: "";
+	position: absolute; 
+	bottom: 4px;
+	left: 3px;
+	width: 31px;
+	height: 36px;
+	background: url("../img/spritesheet.png") -5px -586px;
+}
+
+.catalog-item img {
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.catalog-ice a {
+	position: relative;
+	line-height: 1.375;
+	border-bottom: 1px solid rgba(247, 246, 243, 0.3);
+}
+
+.catalog-item .item-mask {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: -13px;
+	-webkit-box-sizing: inherit;
+	        box-sizing: inherit;
+	width: 293px;
+	padding: 13px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
+}
+
+.catalog-item:hover .item-mask {
+	display: block;
+	z-index: 1;
+}
+
+.catalog-item .mask-btn {
+	margin: 0 auto;
+	margin-top: 325px;
+	margin-bottom: 10px;
+	padding: 10px 22px;
+	font-size: 18px;
+	line-height: 1.33;
+}
+
+.catalog-item:hover img, 
+.catalog-item:hover a,
+.catalog-item .mask-btn:hover {
+	z-index: 1;
+	border: none;
+}
+
+.catalog-item a:hover {
+	border-bottom: 1px solid rgb(255, 188, 158);
+}
+
+.catalog-ice .hit:hover::after,
+.catalog-item:hover .catalog-item-price {
+	z-index: 2;
+}
