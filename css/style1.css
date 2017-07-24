@@ -69,6 +69,7 @@ body {
 	display: inline-block;
 	padding: 12px 17px;
 	vertical-align: top; 
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 18px;
 	color: rgb(255, 255, 255);
 	background-image: -webkit-gradient(linear, left top, right top, from(rgb(231,74,53)), to(rgb(242,104,67)));
@@ -123,8 +124,9 @@ body {
 	-webkit-box-sizing: inherit;
 	        box-sizing: inherit;
 	padding: 9px 13px;
-	line-height: 24px;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-weight: bold;
+	line-height: 24px;
 	background-color: rgb(255, 255, 255);
 	border: 1px solid rgba(178, 178, 178, 0.5);
 	border-radius: 5px;
